@@ -1,0 +1,113 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+body  
+{
+        margin-top: -5%;
+        margin-right: 9%;
+        margin-left: 9%;
+        background-image:url(https://eskipaper.com/images/hd-wallpaper-37.jpg);
+        font-family: Arial,sans-serif;
+        background-size: cover; 
+}
+header{
+        color: cornflowerblue;
+        margin-left: 20%;
+        margin-top: 8%;
+        display: flex;
+        align-items: baseline;
+        cursor: default;
+}
+.music{
+    margin-left: 1%;
+}
+h1{
+        margin-top: -8%;
+        margin-left: 2%;
+        font-size: 500%;
+        background: -webkit-linear-gradient(#0b29ff, #93bdca);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Langar' ,Old English Text MT;
+}
+.login{
+        width: 25%; 
+        margin-top: -1%;  
+        padding: 4%;  
+        background-color: whitesmoke; 
+        opacity: 0.9    ;
+        border-radius: 8%;
+        float: left;
+        cursor: default;
+}
+.login:hover,.signup:hover{
+    padding: 5%;
+}
+.signup{
+        width: 25%;
+        margin-top: -1%; 
+        padding: 4%;
+        background-color: whitesmoke; 
+        opacity: 0.9;
+        border-radius: 8% ;
+        float: right;
+        cursor: default;
+}
+h2{
+        text-align: center;
+}  
+label{    
+        font-size: 17px; 
+}  
+#loginUsername,#signupUsername,#loginPassword,#txtPassword,#txtConfirmPassword{  
+        width: 105%;  
+        height: 30px;  
+        border: solid; 
+        border-color: black;
+        border-radius: 3px;  
+        padding-left: 8px;
+        background-color:white;
+        color: black;
+    
+} 
+.Pass{  
+        width: 105%;  
+        height: 30px;  
+        border: solid; 
+        border-color: black;
+        border-radius: 3px;  
+        padding-left: 8px; 
+        color: black;
+      
+} 
+.log{ 
+        background-color: green;
+        width: 43%;  
+        height: 41px;  
+        border: solid;  
+        border-radius: 17px;  
+        padding-left: 7px;  
+        color: white;
+        margin-left: 30%;
+    
+}
+.check,.log:hover{
+        cursor: pointer;
+}
+span{  
+        color: black;  
+        font-size: 17px;
+        cursor: default;
+}  
+a{ 
+    
+        float: right;
+        border-radius: 2%;
+        text-decoration: none;
+}
+
+input{
+        cursor: text;
+        box-sizing: border-box;
+        margin: 3px 3px 3px 4px;
+}

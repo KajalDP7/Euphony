@@ -1,0 +1,457 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+body{
+    background-color: lightgreen;
+transition: background-color .5s;
+}
+header{
+    color: cornflowerblue;
+    margin-left: 27%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    cursor: default;
+    font-family: 'Langar';
+}
+h1{
+  margin-top: -8%;
+  margin-left: 2%;
+  font-size: 535%;
+  background: -webkit-linear-gradient(#0b29ff, #93bdca);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Langar' ,Old English Text MT;
+}
+.music{
+    margin-left: 1%;
+}
+b{
+    font-size: 70%;
+}
+.bold{
+    padding-left: 30px;
+}
+.list1{
+
+    height: 8%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Satisfy';
+    line-height: 90%;
+    font-size: 141%;
+    margin-top: 2%;
+    padding-left: 2%;
+    border-radius: 15px;
+    background: -webkit-linear-gradient(#2f50f1,#6c93d9);
+    border: solid;
+}
+.playlist:hover{
+    transition: smooth;
+    padding: 10px;
+}
+.play{
+    margin-left: 5%;
+    opacity: 0.8;
+}
+.play:hover{
+    opacity: 1.0;
+}
+.list2,.list3,.list4,.list5,.list6,.list7{
+    height: 8%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Satisfy';
+    line-height: 90%;
+    font-size: 141%;
+    padding-left: 2%;
+    border-radius: 15px;
+    margin-top: 11px;
+    background: -webkit-linear-gradient(#2f50f1,#6c93d9);
+    border: solid;
+}
+.playpause1{
+    padding-left: 96%;
+    padding-right: 40%;
+    opacity: 0.75;
+}
+.playpause1:hover{
+    opacity: 1.0;
+}
+.playpause2{
+    padding-left: 98%;
+    opacity: 0.75;
+}
+.playpause2:hover{
+    opacity: 1.0;
+}
+.playpause3{
+    padding-left: 90%;
+    opacity: 0.75;
+}
+.playpause3:hover{
+    opacity: 1.0;
+}
+.playpause4{
+    padding-left: 40%;
+    opacity: 0.75;
+}
+.playpause4:hover{
+    opacity: 1.0;
+}
+.playpause5{
+    padding-left: 85%;
+    opacity: 0.75;
+}
+.playpause5:hover{
+    opacity: 1.0;
+}
+.playpause6{
+    padding-left: 49%;
+    opacity: 0.75;
+}
+.playpause6:hover{
+    opacity: 1.0;
+}
+.playpause7{
+    padding-left: 88%;
+    opacity: 0.75;
+}
+.playpause7:hover{
+    opacity: 1.0;
+}
+.note1{
+    padding-right: 40%;
+    opacity: 0.75;
+}
+.note1:hover{
+    opacity: 1.0;
+}
+
+.note{
+    padding-left: 40%;
+    padding-right: 40%;
+    opacity: 0.75;
+}
+.note:hover{
+    opacity: 1.0;
+}
+.lyric{
+    padding-right: 40%;
+    opacity: 0.65;
+}
+.lyric:hover{
+    opacity: 1.0;
+}
+.download{
+    opacity: 0.6;
+}
+.download:hover{
+    opacity: 1.0;
+}
+.note1,.note,.playpause1,.playpause2,.playpause3,.playpause4,.playpause5,
+.playpause6,.playpause7,.playpause,#pauseButton,.play,.lyric,.download:hover{
+    cursor: pointer;
+}
+div#parent{
+    float: left;
+    width: 35%;
+    border: 2px;
+    border-style: solid;
+    border-radius: 5%;
+    padding: 3%;
+    margin-top: -5%;
+    margin-left: 5%;
+}
+.buttonss {
+    display: flex;
+    flex-direction: row;
+}
+div#musicSong {
+    margin-top: -4.8%;
+    width: 35%;
+    height: 84%;
+    border: 2px;
+    border-style: solid;
+    float: right;
+    border-radius: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#songTitle {
+    padding-top: 15%;
+    font-size: 200%
+}
+#artistName {
+    font-size: 125%
+}
+img {
+    padding-left: 28%;
+    margin-top: 8%;
+    width: 45%;
+}
+#pauseButton {
+    margin-top: 5%;
+}
+
+.slider_container {
+    width: 85%;
+    max-width: 400px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modify the appearance of the slider */
+.seek_slider, .volume_slider {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+height: 5px;
+background: black;
+opacity: 0.8;
+-webkit-transition: opacity .2s;
+transition: opacity .2s;
+}
+
+/* Modify the appearance of the slider thumb */
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+width: 15px;
+height: 15px;
+background: white;
+cursor: pointer;
+border-radius: 50%;
+}
+
+/* Change the opacity when mouse is hovered */
+.seek_slider:hover,
+.volume_slider:hover {
+opacity: 1.0;
+}
+
+.seek_slider {
+width: 60%;
+}
+
+.volume_slider {
+width: 30%;
+}
+
+.current-time,
+.total-duration {
+padding: 10px;
+}
+
+i.fa-volume-down,
+i.fa-volume-up {
+padding: 10px;
+}
+
+
+/**
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+body{
+    background-color: #060a6d;
+}
+header{
+    color: cornflowerblue;
+    margin-left: 27%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    cursor: default;
+}
+h1{
+  margin-top: -8%;
+  margin-left: 2%;
+  font-size: 535%;
+  background: -webkit-linear-gradient(#0b29ff, #93bdca);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Langar' ,Old English Text MT;
+}
+.music{
+    margin-left: 1%;
+}
+b{
+    font-size: 150%;
+}
+.bold{
+    padding-left: 30px;
+}
+.list1{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Satisfy';
+    line-height: 90%;  
+    font-size: 141%;
+    margin-top: 2%;
+    padding-left: 7%;
+    border-radius: 15px; 
+    background: -webkit-linear-gradient(#2f50f1,#6c93d9);
+    border: solid;
+}
+.list1:hover{
+    padding: 1%;
+}
+div{
+    display: flex;
+    flex-direction: row;
+}
+.playlist{
+    padding: 5px;
+    line-height: 90%;
+    border: solid;
+    margin-left: 80%;
+    margin-top: -6%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 150%;
+    font-family: Comic Sans MS;
+    background: -webkit-linear-gradient(#0D9BDC, #030852);
+    border-width: 5px;
+    cursor: default;
+}
+.playlist:hover{
+    transition: smooth;
+    padding: 10px;
+}
+.play{
+    margin-left: 5%;
+    opacity: 0.8;
+}
+.play:hover{
+    opacity: 1.0;
+}
+.list2,.list3,.list4,.list5,.list6,.list7{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Satisfy';
+    line-height: 90%;  
+    font-size: 141%;
+    padding-left: 7%;
+    border-radius: 15px;
+    margin-top: 11px;
+    background: -webkit-linear-gradient(#2f50f1,#6c93d9);
+    border: solid;
+}
+(((.list2:hover,
+.list3:hover,
+.list4:hover,
+.list5:hover,
+.list6:hover,
+.list7:hover{
+    padding: 1%;
+
+})))
+.playpause1{
+    padding-left: 265%;
+    padding-right: 54%;
+    opacity: 0.75;
+}
+.playpause1:hover{
+    opacity: 1.0;
+}
+.playpause2{
+    padding-left: 267%;
+    opacity: 0.75;
+}
+.playpause2:hover{
+    opacity: 1.0;
+}
+.playpause3{
+    padding-left: 259%;
+    opacity: 0.75;
+}
+.playpause3:hover{
+    opacity: 1.0;
+}
+.playpause4{
+    padding-left: 205%;
+    opacity: 0.75;
+}
+.playpause4:hover{
+    opacity: 1.0;
+}
+.playpause5{
+    padding-left: 254%;
+    opacity: 0.75;
+}
+.playpause5:hover{
+    opacity: 1.0;
+}
+.playpause6{
+    padding-left: 215%;
+    opacity: 0.75;
+}
+.playpause6:hover{
+    opacity: 1.0;
+}
+.playpause7{
+    padding-left: 256%;
+    opacity: 0.75;
+}
+.playpause7:hover{
+    opacity: 1.0;
+}
+.note1{
+    padding-right: 53%;
+    opacity: 0.75;
+}
+.note1:hover{
+    opacity: 1.0;
+}
+
+.note{
+    padding-left: 51%;
+    padding-right: 54%;
+    opacity: 0.75;
+}
+.note:hover{
+    opacity: 1.0;
+}
+.lyric{
+    padding-right: 54%;
+    opacity: 0.65;
+}
+.lyric:hover{
+    opacity: 1.0;
+}
+.download{
+    opacity: 0.6;
+}
+.download:hover{
+    opacity: 1.0;
+}
+.note1,
+.note,
+.playpause1,
+.playpause4,
+.playpause5,
+.playpause6,
+.playpause7,
+.playpause,
+.play,
+.lyric,
+.download:hover{
+    cursor: pointer;
+}
+
+//added for other elementes present in html 
+**/

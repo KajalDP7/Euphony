@@ -1,0 +1,108 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Login/Signup Form</title>
+    <link rel="icon" href="../favi/icons8-audio-wave-48.png" type="image/gif">
+    <link rel="stylesheet" type= "text/css" href="../css/login.css"> 
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+   
+        <script>
+            function signupValidate() {
+                var password = document.getElementById("txtPassword").value;
+                var confirmPassword = document.getElementById("txtConfirmPassword").value;
+                var signupName = document.getElementById("signupUsername").value;
+                if(signupName == "") {
+                    alert("Enter a valid Name to Signup");
+                    return;
+                }
+                else if(password == "") {
+                    alert("Enter password to register successfull");
+                    return;
+                }
+                else if(confirmPassword == "") {
+                    alert("Please Re-Enter password to confirm");
+                    return;
+                }
+                else if(password.length < 6) {
+                    document.getElementById('incorrPassword').innerHTML = 'Password less than 6 characters.';
+                    return;
+                }
+                else if (password != confirmPassword) {
+                    alert("Passwords entered do not match.Try again");
+                    return;
+                }
+                window.location.href='LoginPage.html';
+            }
+            function loginValidate() {
+                var loginName = document.getElementById("loginUsername").value;
+                var password = document.getElementById("loginPassword").value;
+                if (loginName == "") {
+                    alert("Enter a valid Name");
+                    return;
+                }
+                else if(password == "") {
+                    alert("Enter Password to Login successfully");
+                    return;
+                }
+                else if(password.length < 6) {
+                    document.getElementById('incorrectPassword').innerHTML = 'Password less than 6 characters.';
+                    return;
+                }
+                window.location.href='ListPage.html';
+            }
+        </script> 
+</head>
+<header>
+    <div class="music">
+        <i class="fa fa-music fa-3x"></i>
+    </div>
+    <div class="music">
+        <i class="fa fa-music fa-5x"></i>
+    </div>
+    <h1>Euphony</h1>
+    <div class="music">
+        <i class="fa fa-music fa-5x"></i>
+    </div>
+    <div class="music">
+        <i class="fa fa-music fa-3x"></i>
+    </div>
+</header>
+<body>    
+        
+    <div class="login">
+    <h2>Login</h2><br>
+    <form id="login">    
+        <label><b>User Name</b></label>     
+        <input type="text" id="loginUsername" placeholder="Enter Username">    
+        <br><br>    
+        <label><b>Password</b></label>     
+        <input type="Password" class="Pass" id="loginPassword" placeholder="Enter Password">
+        <p id=incorrectPassword style="color: red"></p>
+        <br>
+        <button type="button" class="log" onclick="loginValidate()">Login</button>
+        <br><br>    
+        <input type="checkbox" class="check"><span>Remember me</span> <br><br>    
+        <a href="#">Forgot Password</a>
+        <br>
+    </form>     
+    </div>
+    
+    <div class="signup">
+    <h2>Register</h2><br>
+    <form id="login">    
+        <label><b>User Name</b></label>     
+        <input type="text" id="signupUsername" placeholder="Enter Username">    
+        <br><br>        
+        <label><b>Password</b></label>     
+        <input type="Password"  id="txtPassword" class="Pass" placeholder="Enter Password">
+        <br><br>
+        <label><b>Confirm Password</b></label>
+        <input type="text" id="txtConfirmPassword" class = "Pass" placeholder="Confirm Password">
+        <p id=incorrPassword style="color: red"></p>
+        <br>
+        <button type="button" class="log" onclick="signupValidate()">SignUp</button>      
+        <br><br>           
+    </form>     
+    </div>
+</body>    
+</html>     
